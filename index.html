@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momento</title>
+  <link rel="icon" href="images/1.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="images/1.png" sizes="16x16" type="image/png">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <div id="preloader">
+    <img src="images/loading.gif" alt="Loading..." class="preloader-icon">
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" alt="My Portfolio Logo">
+      </div>
+      
+      <ul id="menu" class="menu">
+        <li><a href="#home" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#about" title="About"><i class="fas fa-user"></i></a></li>
+        <li><a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a></li>
+        <li><a href="#projects" title="Projects"><i class="fas fa-briefcase"></i></a></li>
+        <li><a href="contact_form.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+      
+      <div class="menu-icon" id="menu-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>      
+    </nav>
+  </header>
+
+         <!--111,20,20-maroon, 225,203,169 light brown , 12, 34, 68-navy blue , black-->
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/760d9d2f-78ca-427c-9618-c6fd69ae61dd/m4dD3pxXd4.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+    </div>
+    <div class="hero-content">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/61b52ae2-1d44-4739-9ff3-80b83a8439b9/Ai7j2W5Lzv.json" background="##FFFFFF" speed="1" style="width: 300px; height: 200px" autoplay direction="1" mode="normal"></lottie-player>
+      <a href="contact_form.html" class="cta-btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container1">
+      <div class="added">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with a strong background in HTML, CSS, JavaScript, and React. I love creating user-friendly websites and web apps that solve real-world problems.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/portfolio.jpg" alt="About Me Image">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill="95">
+          <h3><i class="fab fa-html5"></i> HTML</h3>
+          <p>Strong understanding of HTML5 and semantic markup.</p>
+          <div class="progress-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="90">
+          <h3><i class="fab fa-python"></i> Python</h3>
+          <p>learning Python for web development, data analysis, and machine learning.</p>
+          <div class="progress-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="70">
+          <h3><i class="fab fa-java"></i> Java</h3>
+          <p>Proficient in Java for building robust backend systems and Android applications.</p>
+          <div class="progress-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="85">
+          <h3><i class="fas fa-database"></i> SQL</h3>
+          <p>Skilled in SQL for database design and data manipulation across relational database like MySQL.</p>
+          <div class="progress-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="95">
+          <h3><i class="fab fa-css3-alt"></i> CSS</h3>
+          <p>Expert in responsive layouts, Flexbox, Grid, and animations.</p>
+          <div class="progress-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="80">
+          <h3><i class="fab fa-js-square"></i> JavaScript</h3>
+          <p>Experiencing and learning with ES6+, vanilla JavaScript, and frameworks like React.</p>
+          <div class="progress-bar">
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+
+<!----additional skill-->
+
+<div class="container4">
+  <button class="cta-btn" onclick="toggleSkills()">What else?</button>
+  <div class="skills-box" id="skillsContainer">
+      <ul class="skills-list">
+          <li>Certificate for completion of workshop on Data Structure Using java from VJTI</li>
+          <li>Certificate of completion of national level webinar on investors awareness</li>
+          <li>Certificate of completion of boot camp with DevTown on Python and AI from Amazon and Google.</li>
+          <li>Skilled in front-end web development</li>
+          <li>Skilled in time management and adaptability to changing environment & priorities</li>
+          <li>Fluent in written and oral communication, leadership and teamwork</li>
+      </ul>
+  </div>
+</div>
+
+<script>
+  function toggleSkills() {
+      let skillsBox = document.getElementById("skillsContainer");
+      skillsBox.classList.toggle("open");
+  }
+</script>
+
+<!------>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container3">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card" onclick="openModal(1)">
+                <img src="images/p1_0.png" alt="Project 1">
+                <h3>Project One</h3>
+            </div>
+            <div class="project-card" onclick="openModal(2)">
+                <img src="images/p2_0.png" alt="Project 2">
+                <h3>Project Two</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <h3 id="modal-title"></h3>
+        <div id="modal-images"></div>
+        <p id="modal-description"></p>
+        <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+  </section>
+  
+  <div class="resume-container">
+    <!-- New div beside the resume-container -->
+    <div class="extra-info">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/73526e89-dbb2-4572-8092-8033644615c8/QPaavEGWgU.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+    </div>
+  <div class="my-resume">
+    <h2>Download My Resume</h2>
+    <p>Click the button below to view or download my resume.</p>
+    <a href="POOJA_PATEL.pdf" target="_blank">
+      <button>View Resume</button>
+    </a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container2">
+      <p>&copy; 2024 Momento |  All Rights Reserved.</p>
+      <div class="social-icons">
+            <a href="https://facebook.com" class="icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" class="icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momento</title>
+    <link rel="icon" href="images/1.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/1.png" sizes="16x16" type="image/png">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    >
+    <style>
+      /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7e92a67a;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    height: 90vh;
+    background-image: url('images/bg2.png');
+    box-shadow: 0 4px 8px rgb(0 0 0 / 37%);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .animation-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #212f36;
+  }
+  
+  .animation {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Adds spacing below the animation */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Adds space between the icons */
+  }
+  
+  .icon img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon {
+      color: #fff;
+  }
+  
+  .icon:hover img {
+    transform: scale(1.1); /* Adds a slight zoom effect on hover */
+  }
+  
+  .form-container {
+    flex: 1; /* Allow the form to take equal width as the animation container */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 30px;
+    overflow: hidden;
+    text-align: center; /* Center align text */
+  }
+  
+  form {
+    width: 70%; /* Ensure the form spans the container width */
+    max-width: 400px; /* Limit the form width */
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%; /* Inputs take full width */
+    padding: 5px;
+    border: 1px solid #979696;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    resize: none; /* Prevent resizing */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: -5px;
+    width: 105%; /* Button spans the full width of the form */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .btn:hover {
+    background-color: #84fbc5;
+    color: #000000;
+  }
+  
+    </style>
+  </head>
+<body>
+    <div class="contact-container">
+        <div class="animation-container">
+          <!-- Add your animation here -->
+          <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/67363771-7ae3-4a8e-8b4e-870c4638cd8e/eVdJrsftXm.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+          <div class="social-icons">
+            <a href="https://facebook.com" class="icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" class="icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="form-container">
+          <h2>Contact Us</h2>
+    <form action="submit_contact.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      
+    </div>
+  </div>
+</body>
+</html>
+
+
